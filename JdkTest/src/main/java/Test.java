@@ -44,6 +44,8 @@ public class Test {
 
         System.out.println(num[0]);
 
+        System.out.println(Integer.toBinaryString((int)Math.pow(2, 10) & 3));
+
 //
 //        System.out.println(Integer.toBinaryString(tableSizeFor(4562)));
 //

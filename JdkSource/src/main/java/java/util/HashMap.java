@@ -731,6 +731,9 @@ public class HashMap<K,V> extends AbstractMap<K,V>
                         Node<K,V> next;
                         do {
                             next = e.next;
+                            // 默认hashmap 的size 是2的n次方，从二进制看就是，最左边一位是1，其余位是0
+                            // 平时计算数组小坐标是，这个size-1，那二进制就是所有位都是1，再&hash value
+                            // 这里的操作就很明显了
                             if ((e.hash & oldCap) == 0) {
                                 if (loTail == null)
                                     loHead = e;

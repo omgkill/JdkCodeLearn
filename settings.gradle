@@ -1,3 +1,5 @@
+rootProject.name = 'JdkCodeLearn'
+
 include 'JdkSource'
 
 include 'JdkTest'
